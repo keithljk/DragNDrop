@@ -1,0 +1,46 @@
+.d_flex {
+    display: flex
+}
+.d_iflex {
+    display: inline-flex
+}
+.ai_c {
+    align-items: center;
+}
+.jc_c {
+    justify-content: center;
+}
+.m_05 {
+    margin: 0 .5rem;
+}
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.search_input input {
+    display: inline-block;
+    border-radius: 15px;
+    text-indent: 30px;
+    height: 30px;
+    border: 1px solid;
+}
+.search_input i {
+    position: relative;
+    left: 33px;
+}
+.button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    border: 0;
+}
+.plus {
+    background: radial-gradient(circle, #d22651 25%, #db5173, #e892a8);
+    color: #fff;
+}
+.question {
+    border: 1px solid #fff;
+}

@@ -1,0 +1,21 @@
+.navigator {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+.navigator li {
+    padding: 7px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+.navigator li:hover {
+    background-color: rgba(137, 143, 255, .3);
+    cursor: pointer;
+}
+.isActived {
+    border-bottom: 2px solid #b1b5ff;
+}
+.isActived > a {
+    color: #b1b5ff;
+}

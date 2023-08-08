@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /*  可以控制不要反白 */
+    user-select: none;
+}
+.board {
+    width: calc(25% - 20px);
+    padding: 10px;
+    margin: 0 10px;
+    background-color: rgb(37, 32, 32);
+    border-radius: 10px;
+}
+.board div:not(.card) {
+    pointer-events: none;
+}
+.d_flex {
+    display: flex
+}
+.ai_c  {
+    align-items: center
+}
+.jc_sb  {
+    justify-content: space-between
+}
+.jc_c  {
+    justify-content: center
+}
+.board_button {
+    background-color: transparent;
+    cursor: pointer;
+}
+.board_button:hover {
+    background-color: rgba(17, 16, 16, 0.3);
+}
+.pe_a {
+    pointer-events: all;
+}
+.textarea {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    width: -webkit-fill-available;
+    line-height: 1.5rem;
+    font-size: large;
+}
+.mr_5 {
+    margin-right: .5em;
+}

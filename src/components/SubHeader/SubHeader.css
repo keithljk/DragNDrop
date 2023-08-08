@@ -1,0 +1,34 @@
+.d_flex {
+    display: flex
+}
+.jc_sb {
+    justify-content: space-between
+}
+.sub_container {
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.text_container {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1.5rem;
+}
+.group {
+    display: flex;
+    align-items: center;
+}
+.group > div {
+    padding: .5rem 1rem;
+}
+.fake_button {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.fake_button > span {
+    padding-left: 5px;
+}
+.fake_button:hover {
+    background-color: rgba(0, 0, 0, .3);
+}

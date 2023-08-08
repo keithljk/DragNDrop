@@ -47,7 +47,6 @@ const Board = () => {
   }])
 
   const handleDrop: DragEventHandler<HTMLDivElement> = (e) => {
-    console.log(e)
     const dataTransfer = e.dataTransfer.getData("text")
     const targetCard = JSON.parse(dataTransfer) as {
         name: string,
@@ -71,7 +70,7 @@ const Board = () => {
         }
     }
 
-    const a = datas.map((data) => {
+    const newDatas = datas.map((data) => {
         const originIndex = data.cards.findIndex((card) => card.name === dragCard?.id)
 
         if(data.name === fakeParent.id){
@@ -110,8 +109,7 @@ const Board = () => {
     })
     
     fake?.remove()
-    console.log(a)
-    setDatas(a)
+    setDatas(newDatas)
   }
   const handleDragEnter: DragEventHandler<HTMLDivElement>  = (e) => {
     cancelDefault(e)

@@ -9,7 +9,7 @@ const Card = ({data}: {data: {
   comment: number
 }}) => {
   const [isMoved, setIsMoved] = useState(false)
-  const [position, setPosition] = useState({x: 0, y: 0})
+  // const [position, setPosition] = useState({x: 0, y: 0})
   const cardRef = useRef(null)
 
   // const a = useCallback(() => {
@@ -22,7 +22,7 @@ const Card = ({data}: {data: {
   // }, [position])
   // useEffect(() => a, [a])
 
-  const handleMouseMoveCapture: MouseEventHandler<HTMLDivElement> = (e) => {
+  const handleMouseMoveCapture: MouseEventHandler<HTMLDivElement> = () => {
     // console.log(`${e.movementX},${e.movementY}`)
     // const aw = e.target as HTMLDivElement
     // aw.classList.add('dragging')
@@ -54,7 +54,7 @@ const Card = ({data}: {data: {
       
     // }
   }
-  const handleEnd: DragEventHandler<HTMLDivElement> = (e) => {
+  const handleEnd: DragEventHandler<HTMLDivElement> = () => {
     // const aw = e.target as HTMLDivElement
     // aw.classList.remove('dragging')
     
